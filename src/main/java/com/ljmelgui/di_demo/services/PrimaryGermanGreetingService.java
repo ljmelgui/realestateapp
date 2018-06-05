@@ -1,5 +1,6 @@
 package com.ljmelgui.di_demo.services;
 
+import com.ljmelgui.di_demo.repositories.GreetingRepository;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
@@ -9,8 +10,10 @@ import org.springframework.stereotype.Service;
 @Profile("de")
 public class PrimaryGermanGreetingService implements GreetingService {
 
+    private GreetingRepository greetingRepository;
+
     @Override
     public String sayGreeting() {
-        return "Hallo vom Hauptdienst";
+        return greetingRepository.getGermanGreeting();
     }
 }

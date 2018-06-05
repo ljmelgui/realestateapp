@@ -4,7 +4,7 @@ public class GreetingRepositoryImpl implements GreetingRepository {
 
     @Override
     public String getEnglishGreeting() {
-        return "Hallo vom Hauptdienst";
+        return "Hello - Primary Greeting service";
     }
 
     @Override
@@ -14,6 +14,6 @@ public class GreetingRepositoryImpl implements GreetingRepository {
 
     @Override
     public String getGermanGreeting() {
-        return "Hello - Primary Greeting service";
+        return "Hallo vom Hauptdienst";
     }
 }

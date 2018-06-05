@@ -1,5 +1,8 @@
 package com.ljmelgui.di_demo.repositories;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class GreetingRepositoryImpl implements GreetingRepository {
 
     @Override

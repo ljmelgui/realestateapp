@@ -1,4 +1,4 @@
-package com.ljmelgui.di_demo.services;
+package com.ljmelgui.services;
 
 public interface GreetingService {
     String sayGreeting();

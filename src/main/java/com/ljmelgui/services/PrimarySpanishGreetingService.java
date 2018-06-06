@@ -1,4 +1,4 @@
-package com.ljmelgui.di_demo.services;
+package com.ljmelgui.services;
 
 import com.ljmelgui.di_demo.repositories.GreetingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,18 +8,18 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-@Profile({"en", "default"})
-public class PrimaryGreetingService implements GreetingService {
+@Profile("es")
+public class PrimarySpanishGreetingService implements GreetingService {
 
     private GreetingRepository greetingRepository;
 
     @Autowired
-    public PrimaryGreetingService(GreetingRepository greetingRepository) {
+    public PrimarySpanishGreetingService(GreetingRepository greetingRepository) {
         this.greetingRepository = greetingRepository;
     }
 
     @Override
     public String sayGreeting() {
-        return greetingRepository.getEnglishGreeting();
+        return greetingRepository.getSpanishGreeting();
     }
 }

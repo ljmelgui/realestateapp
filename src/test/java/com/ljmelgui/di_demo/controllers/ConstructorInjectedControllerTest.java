@@ -1,7 +1,6 @@
 package com.ljmelgui.di_demo.controllers;
 
-import com.ljmelgui.di_demo.services.GreetingService;
-import com.ljmelgui.di_demo.services.GreetingServiceImpl;
+import com.ljmelgui.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -7,8 +7,10 @@ import com.ljmelgui.di_demo.controllers.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.ljmelgui.services", "com.ljmelgui.di_demo"})
 public class DiDemoApplication {
 
     public static void main(String[] args) {

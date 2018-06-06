@@ -1,4 +1,4 @@
-package com.ljmelgui.di_demo.services;
+package com.ljmelgui.services;
 
 import com.ljmelgui.di_demo.repositories.GreetingRepository;
 import org.springframework.beans.factory.annotation.Autowired;

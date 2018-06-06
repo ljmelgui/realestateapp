@@ -1,4 +1,4 @@
-package com.ljmelgui.di_demo.services;
+package com.ljmelgui.services;
 
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package com.ljmelgui.di_demo.controllers;
 
-import com.ljmelgui.di_demo.services.GreetingService;
+import com.ljmelgui.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller
